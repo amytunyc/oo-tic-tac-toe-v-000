@@ -109,6 +109,6 @@ class TicTacToe
   end
   
   def play
-    puts ""
+    until over?== true 
   end
 end
