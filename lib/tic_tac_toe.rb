@@ -106,9 +106,8 @@ class TicTacToe
   end
   
   def winner?
-    WIN_COMBINATIONS
-      index=won?[0]
-      return @board[index]
+    WIN_COMBINATIONS.detect |win_combo|
+      if (@board[win_combo[0]]) =="X" && 
     else
       nil
   end
