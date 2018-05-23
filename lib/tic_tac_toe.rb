@@ -90,4 +90,7 @@ class TicTacToe
     else
       false
   end
+  
+  def full?
+    @board.all? {|i| i==}
 end
