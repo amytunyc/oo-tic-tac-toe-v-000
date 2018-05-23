@@ -102,5 +102,9 @@ class TicTacToe
   end
   
   def over?
-    full? || won?
+    full? || won? ||draw?
+  end
+  
+  def winner?
+    
 end
