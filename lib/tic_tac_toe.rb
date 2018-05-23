@@ -109,6 +109,6 @@ class TicTacToe
   end
   
   def play
-    
+    puts ""
   end
 end
