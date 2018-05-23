@@ -106,7 +106,7 @@ class TicTacToe
   end
   
   def winner?
-    if won?
+    WIN_COMBINATIONS
       index=won?[0]
       return @board[index]
     else
