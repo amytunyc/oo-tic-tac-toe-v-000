@@ -106,5 +106,6 @@ class TicTacToe
   end
   
   def winner?
-    
+    index=won[0]
+  end
 end
