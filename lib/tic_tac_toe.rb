@@ -47,6 +47,11 @@ class TicTacToe
     end
   end
   
+  def turn 
+    puts "Please enter 1-9:"
+    
+  end
+
   def turn_count
     counter = 0 
     @board.each do |token|
