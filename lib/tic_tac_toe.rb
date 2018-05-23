@@ -74,9 +74,9 @@ class TicTacToe
   end
   
   def won?
-    WIN_COMBINATIONS.each do |win_combo|
-     if (@board[win_combo[0]]) == "X" && (@board[win_combo[1]]) == "X" && (@board[win_combo[2]]) == "X" || (@board[win_combo[0]]) == "O" && (@board[win_combo[1]]) == "O" && (@board[win_combo[2]]) == "O"
-      return win_combo
+    WIN_COMBINATIONS.each do |combo|
+     if (@board[combo[0]]) == "X" && (@board[combo[1]]) == "X" && (@board[combo[2]]) == "X" || (@board[combo[0]]) == "O" && (@board[combo[1]]) == "O" && (@board[combo[2]]) == "O"
+      return  combo
       end
     end
       false
@@ -97,7 +97,7 @@ class TicTacToe
   end
   
   def winner?
-    WIN_COMBINATIONS.each do |win_combo|
+    WIN_COMBINATIONS.each do |combo|
       if @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X" 
         return "X"
       elsif @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
