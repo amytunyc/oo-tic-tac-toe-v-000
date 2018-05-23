@@ -112,6 +112,7 @@ class TicTacToe
     until over? == true 
       turn
     end
-    
+    if won?
+      puts 
   end
 end
