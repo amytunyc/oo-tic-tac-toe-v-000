@@ -53,7 +53,7 @@ class TicTacToe
     if valid_move?(input)
       move(input, player)
     else
-      turn_count
+      turn
     end
     display_board
   end
